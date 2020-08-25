@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* style code with prismjs */
+@import '~prismjs/plugins/toolbar/prism-toolbar.css';
+@import '~prismjs/themes/prism-tomorrow';
+
+.nx-jangular-blog-centered-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  max-width: 55vw;
+  margin-right: auto;
+
+  &--large {
+    max-width: 35vw;
+  }
+}
+
+@media all and (max-width: 980px) {
+  .nx-jangular-blog-centered-image {
+    max-width: 75vw;
+  }
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+/* material overrides */
+
+// aligns prefix with input
+.mat-form-field-prefix {
+  align-self: flex-end;
+  padding-right: 8px;
+}

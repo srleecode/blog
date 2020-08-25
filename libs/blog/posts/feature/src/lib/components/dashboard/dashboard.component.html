@@ -1,0 +1,18 @@
+<div class="container">
+  <ng-container *ngFor="let card of paginatedCards$ | async">
+    <mat-card class="dashboard-card" (click)="cardClick.emit(card)">
+      <mat-card-content class="dashboard-card-content">
+        <h2 class="title">{{ card.title }}</h2>
+        <small class="published-date">{{ card.publishedDate }}</small>
+        <p class="description">{{ card.description }}</p>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
+  <mat-paginator
+    [length]="dataSource.length"
+    [pageSize]="dataSource.pageSize"
+    [pageSizeOptions]="dataSource.pageSizeOptions"
+    (page)="dataSource.updatePage($event)"
+  >
+  </mat-paginator>
+</div>

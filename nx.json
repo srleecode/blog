@@ -1,0 +1,63 @@
+{
+  "npmScope": "srlee",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/workspace/tasks-runners/default",
+      "options": {
+        "cacheableOperations": ["build", "lint", "test", "e2e"]
+      }
+    }
+  },
+  "projects": {
+    "blog": {
+      "tags": []
+    },
+    "blog-e2e": {
+      "tags": [],
+      "implicitDependencies": ["blog"]
+    },
+    "blog-posts-feature": {
+      "tags": ["app:blog", "scope:blog-posts", "type:feature"]
+    },
+    "blog-posts-shell": {
+      "tags": ["app:blog", "scope:blog-posts", "type:shell"]
+    },
+    "blog-posts-util": {
+      "tags": ["app:blog", "scope:blog-posts", "type:util"]
+    },
+    "blog-post-data-access": {
+      "tags": ["app:blog", "scope:blog-post", "type:data-access"]
+    },
+    "blog-post-ui": {
+      "tags": ["app:blog", "scope:blog-post", "type:ui"]
+    },
+    "blog-post-shell": {
+      "tags": ["app:blog", "scope:blog-post", "type:shell"]
+    },
+    "blog-posts-data-access": {
+      "tags": ["app:blog", "scope:blog-posts", "type:data-access"]
+    },
+    "blog-header-data-access": {
+      "tags": ["app:blog", "scope:blog-header", "type:data-access"]
+    },
+    "blog-header-feature": {
+      "tags": ["app:blog", "scope:blog-header", "type:feature"]
+    },
+    "blog-header-util": {
+      "tags": ["app:blog", "scope:blog-header", "type:util"]
+    }
+  }
+}

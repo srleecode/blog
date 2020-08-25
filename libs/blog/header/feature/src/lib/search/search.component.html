@@ -1,0 +1,24 @@
+<form class="wrapper" [formGroup]="searchForm">
+  <mat-form-field class="autocomplete">
+    <input
+      type="text"
+      matInput
+      formControlName="routeGroup"
+      [matAutocomplete]="autoGroup"
+      #autoCompleteInput
+    />
+    <mat-icon matPrefix>search</mat-icon>
+    <mat-autocomplete
+      #autoGroup="matAutocomplete"
+      (optionSelected)="goToRoute($event)"
+    >
+      <ng-container *ngFor="let group of routeGroups$ | async">
+        <mat-optgroup [label]="group.type" *ngIf="group.routes.length > 0">
+          <mat-option *ngFor="let card of group.routes" [value]="card.route">
+            {{ card.title }}
+          </mat-option>
+        </mat-optgroup>
+      </ng-container>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

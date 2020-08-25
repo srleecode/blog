@@ -1,0 +1,64 @@
+<header class="mat-elevation-z6">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <a
+        class="header-button"
+        mat-button
+        routerLink="/code-review-checklist"
+        aria-label="Angular code review check list"
+      >
+        <img
+          class="angular-logo"
+          src="assets/angular-white-transparent.svg"
+          alt="Angular code review check list"
+        />
+        <span class="hide-xs">Code Review</span>
+      </a>
+      <a class="header-button" mat-button routerLink="/posts">
+        <mat-icon
+          class="icon"
+          aria-hidden="false"
+          aria-label="Posts"
+          matTooltip="Posts"
+          >list_alt</mat-icon
+        >
+        <span class="hide-xs">Posts</span>
+      </a>
+      <a class="header-button" mat-button routerLink="/concepts">
+        <mat-icon
+          class="icon"
+          aria-hidden="false"
+          aria-label="Concepts"
+          matTooltip="Concepts"
+          >apps</mat-icon
+        >
+        <span class="hide-xs">Concepts</span>
+      </a>
+      <a class="header-button" mat-button routerLink="/ideals">
+        <mat-icon
+          class="icon"
+          aria-hidden="false"
+          aria-label="Ideals"
+          matTooltip="Ideals"
+          >navigation</mat-icon
+        >
+        <span class="hide-xs">Ideals</span>
+      </a>
+      <a
+        mat-button
+        class="header-button"
+        href="https://github.com/srlee309/jamgular-blog"
+        aria-label="GitHub Repository"
+      >
+        <img
+          class="angular-logo"
+          src="assets/github-circle-white-transparent.svg"
+          alt="angular"
+        />
+        <span class="hide-xs">Github</span>
+      </a>
+      <div class="spacer hide-md"></div>
+      <srlee-search class="hide-md"></srlee-search>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</header>

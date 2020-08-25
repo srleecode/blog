@@ -1,0 +1,504 @@
+{
+  "version": 1,
+  "projects": {
+    "blog": {
+      "projectType": "application",
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      },
+      "root": "apps/blog",
+      "sourceRoot": "apps/blog/src",
+      "prefix": "srlee",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/apps/blog",
+            "index": "apps/blog/src/index.html",
+            "main": "apps/blog/src/main.ts",
+            "polyfills": "apps/blog/src/polyfills.ts",
+            "tsConfig": "apps/blog/tsconfig.app.json",
+            "aot": true,
+            "assets": ["apps/blog/src/favicon.ico", "apps/blog/src/assets"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "apps/blog/src/styles.scss"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "fileReplacements": [
+                {
+                  "replace": "apps/blog/src/environments/environment.ts",
+                  "with": "apps/blog/src/environments/environment.prod.ts"
+                }
+              ],
+              "optimization": true,
+              "outputHashing": "all",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": false,
+              "extractLicenses": true,
+              "vendorChunk": false,
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "blog:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "blog:build:production"
+            }
+          }
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "blog:build"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "apps/blog/tsconfig.app.json",
+              "apps/blog/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!apps/blog/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "apps/blog/jest.config.js",
+            "tsConfig": "apps/blog/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "apps/blog/src/test-setup.ts"
+          }
+        }
+      }
+    },
+    "blog-e2e": {
+      "root": "apps/blog-e2e",
+      "sourceRoot": "apps/blog-e2e/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "apps/blog-e2e/cypress.json",
+            "tsConfig": "apps/blog-e2e/tsconfig.e2e.json",
+            "devServerTarget": "blog:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "blog:serve:production"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["apps/blog-e2e/tsconfig.e2e.json"],
+            "exclude": ["**/node_modules/**", "!apps/blog-e2e/**/*"]
+          }
+        }
+      }
+    },
+    "blog-posts-feature": {
+      "projectType": "library",
+      "root": "libs/blog/posts/feature",
+      "sourceRoot": "libs/blog/posts/feature/src",
+      "prefix": "srlee",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/blog/posts/feature/tsconfig.lib.json",
+              "libs/blog/posts/feature/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/blog/posts/feature/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/blog/posts/feature/jest.config.js",
+            "tsConfig": "libs/blog/posts/feature/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/blog/posts/feature/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "blog-posts-shell": {
+      "projectType": "library",
+      "root": "libs/blog/posts/shell",
+      "sourceRoot": "libs/blog/posts/shell/src",
+      "prefix": "srlee",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/blog/posts/shell/tsconfig.lib.json",
+              "libs/blog/posts/shell/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/blog/posts/shell/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/blog/posts/shell/jest.config.js",
+            "tsConfig": "libs/blog/posts/shell/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/blog/posts/shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "blog-posts-util": {
+      "projectType": "library",
+      "root": "libs/blog/posts/util",
+      "sourceRoot": "libs/blog/posts/util/src",
+      "prefix": "srlee",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/blog/posts/util/tsconfig.lib.json",
+              "libs/blog/posts/util/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/blog/posts/util/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/blog/posts/util/jest.config.js",
+            "tsConfig": "libs/blog/posts/util/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/blog/posts/util/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "blog-post-data-access": {
+      "projectType": "library",
+      "root": "libs/blog/post/data-access",
+      "sourceRoot": "libs/blog/post/data-access/src",
+      "prefix": "srlee",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/blog/post/data-access/tsconfig.lib.json",
+              "libs/blog/post/data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/post/data-access/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/blog/post/data-access/jest.config.js",
+            "tsConfig": "libs/blog/post/data-access/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/blog/post/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "blog-post-ui": {
+      "projectType": "library",
+      "root": "libs/blog/post/ui",
+      "sourceRoot": "libs/blog/post/ui/src",
+      "prefix": "srlee",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/blog/post/ui/tsconfig.lib.json",
+              "libs/blog/post/ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/blog/post/ui/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/blog/post/ui/jest.config.js",
+            "tsConfig": "libs/blog/post/ui/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/blog/post/ui/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "blog-post-shell": {
+      "projectType": "library",
+      "root": "libs/blog/post/shell",
+      "sourceRoot": "libs/blog/post/shell/src",
+      "prefix": "srlee",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/blog/post/shell/tsconfig.lib.json",
+              "libs/blog/post/shell/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/blog/post/shell/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/blog/post/shell/jest.config.js",
+            "tsConfig": "libs/blog/post/shell/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/blog/post/shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "blog-posts-data-access": {
+      "projectType": "library",
+      "root": "libs/blog/posts/data-access",
+      "sourceRoot": "libs/blog/posts/data-access/src",
+      "prefix": "srlee",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/blog/posts/data-access/tsconfig.lib.json",
+              "libs/blog/posts/data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/posts/data-access/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/blog/posts/data-access/jest.config.js",
+            "tsConfig": "libs/blog/posts/data-access/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/blog/posts/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "blog-header-data-access": {
+      "projectType": "library",
+      "root": "libs/blog/header/data-access",
+      "sourceRoot": "libs/blog/header/data-access/src",
+      "prefix": "srlee",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/blog/header/data-access/tsconfig.lib.json",
+              "libs/blog/header/data-access/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/header/data-access/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/blog/header/data-access/jest.config.js",
+            "tsConfig": "libs/blog/header/data-access/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/blog/header/data-access/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "blog-header-feature": {
+      "projectType": "library",
+      "root": "libs/blog/header/feature",
+      "sourceRoot": "libs/blog/header/feature/src",
+      "prefix": "srlee",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/blog/header/feature/tsconfig.lib.json",
+              "libs/blog/header/feature/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/blog/header/feature/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/blog/header/feature/jest.config.js",
+            "tsConfig": "libs/blog/header/feature/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/blog/header/feature/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "blog-header-util": {
+      "projectType": "library",
+      "root": "libs/blog/header/util",
+      "sourceRoot": "libs/blog/header/util/src",
+      "prefix": "srlee",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/blog/header/util/tsconfig.lib.json",
+              "libs/blog/header/util/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/blog/header/util/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/blog/header/util/jest.config.js",
+            "tsConfig": "libs/blog/header/util/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/blog/header/util/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    }
+  },
+  "cli": {
+    "defaultCollection": "@nrwl/angular"
+  },
+  "schematics": {
+    "@nrwl/workspace": {
+      "library": {
+        "linter": "tslint"
+      }
+    },
+    "@nrwl/cypress": {
+      "cypress-project": {
+        "linter": "tslint"
+      }
+    },
+    "@nrwl/node": {
+      "application": {
+        "linter": "tslint"
+      },
+      "library": {
+        "linter": "tslint"
+      }
+    },
+    "@nrwl/nest": {
+      "application": {
+        "linter": "tslint"
+      },
+      "library": {
+        "linter": "tslint"
+      }
+    },
+    "@nrwl/express": {
+      "application": {
+        "linter": "tslint"
+      },
+      "library": {
+        "linter": "tslint"
+      }
+    },
+    "@nrwl/angular:application": {
+      "unitTestRunner": "jest",
+      "e2eTestRunner": "cypress"
+    },
+    "@nrwl/angular:library": {
+      "unitTestRunner": "jest"
+    }
+  },
+  "defaultProject": "blog"
+}

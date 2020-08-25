@@ -1,0 +1,66 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@srlee/blog/posts/feature": [
+        "libs/blog/posts/feature/src/index.ts"
+      ],
+      "@srlee/blog/posts/shell": [
+        "libs/blog/posts/shell/src/index.ts"
+      ],
+      "@srlee/blog/posts/util": [
+        "libs/blog/posts/util/src/index.ts"
+      ],
+      "@srlee-blog/posts/testing": [
+        "libs/blog/posts/src/testing.ts"
+      ],
+      "@srlee/blog/post/data-access": [
+        "libs/blog/post/data-access/src/index.ts"
+      ],
+      "@srlee/blog/post/ui": [
+        "libs/blog/post/ui/src/index.ts"
+      ],
+      "@srlee/blog/post/shell": [
+        "libs/blog/post/shell/src/index.ts"
+      ],
+      "@srlee/blog/posts/data-access": [
+        "libs/blog/posts/data-access/src/index.ts"
+      ],
+      "@srlee/blog/header/data-access": [
+        "libs/blog/header/data-access/src/index.ts"
+      ],
+      "@srlee/blog/header/feature": [
+        "libs/blog/header/feature/src/index.ts"
+      ],
+      "@srlee/blog/header/util": [
+        "libs/blog/header/util/src/index.ts"
+      ],
+      "@srlee-blog/header/testing": [
+        "libs/blog/header/src/testing.ts"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "tmp"
+  ]
+}
