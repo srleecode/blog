@@ -21,7 +21,10 @@
             "polyfills": "apps/blog/src/polyfills.ts",
             "tsConfig": "apps/blog/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/blog/src/favicon.ico", "apps/blog/src/assets"],
+            "assets": [
+              "apps/blog/src/favicon.ico",
+              "apps/blog/src/assets"
+            ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "apps/blog/src/styles.scss"
@@ -83,7 +86,10 @@
               "apps/blog/tsconfig.app.json",
               "apps/blog/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/blog/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/blog/**/*"
+            ]
           }
         },
         "test": {
@@ -118,8 +124,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/blog-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/blog-e2e/**/*"]
+            "tsConfig": [
+              "apps/blog-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/blog-e2e/**/*"
+            ]
           }
         }
       }
@@ -137,7 +148,10 @@
               "libs/blog/posts/feature/tsconfig.lib.json",
               "libs/blog/posts/feature/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/blog/posts/feature/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/posts/feature/**/*"
+            ]
           }
         },
         "test": {
@@ -169,7 +183,10 @@
               "libs/blog/posts/shell/tsconfig.lib.json",
               "libs/blog/posts/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/blog/posts/shell/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/posts/shell/**/*"
+            ]
           }
         },
         "test": {
@@ -201,7 +218,10 @@
               "libs/blog/posts/util/tsconfig.lib.json",
               "libs/blog/posts/util/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/blog/posts/util/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/posts/util/**/*"
+            ]
           }
         },
         "test": {
@@ -268,7 +288,10 @@
               "libs/blog/post/ui/tsconfig.lib.json",
               "libs/blog/post/ui/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/blog/post/ui/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/post/ui/**/*"
+            ]
           }
         },
         "test": {
@@ -278,6 +301,36 @@
             "tsConfig": "libs/blog/post/ui/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/blog/post/ui/src/test-setup.ts"
+          }
+        },
+        "storybook": {
+          "builder": "@nrwl/storybook:storybook",
+          "options": {
+            "uiFramework": "@storybook/angular",
+            "port": 4400,
+            "config": {
+              "configFolder": "libs/blog/post/ui/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        },
+        "build-storybook": {
+          "builder": "@nrwl/storybook:build",
+          "options": {
+            "uiFramework": "@storybook/angular",
+            "outputPath": "dist/storybook/blog-post-ui",
+            "config": {
+              "configFolder": "libs/blog/post/ui/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
           }
         }
       },
@@ -300,7 +353,10 @@
               "libs/blog/post/shell/tsconfig.lib.json",
               "libs/blog/post/shell/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/blog/post/shell/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/post/shell/**/*"
+            ]
           }
         },
         "test": {
@@ -402,7 +458,10 @@
               "libs/blog/header/feature/tsconfig.lib.json",
               "libs/blog/header/feature/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/blog/header/feature/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/header/feature/**/*"
+            ]
           }
         },
         "test": {
@@ -434,7 +493,10 @@
               "libs/blog/header/util/tsconfig.lib.json",
               "libs/blog/header/util/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/blog/header/util/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/header/util/**/*"
+            ]
           }
         },
         "test": {
@@ -444,6 +506,130 @@
             "tsConfig": "libs/blog/header/util/tsconfig.spec.json",
             "passWithNoTests": true,
             "setupFile": "libs/blog/header/util/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "e2e-blog-posttest": {
+      "root": "libs/blog/posttest/.cypress",
+      "sourceRoot": "libs/blog/posttest/.cypress/src",
+      "projectType": "application",
+      "architect": {
+        "e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "libs/blog/posttest/.cypress/cypress.json",
+            "tsConfig": "libs/blog/posttest/.cypress/tsconfig.e2e.json"
+          }
+        },
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "libs/blog/posttest/.cypress/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/posttest/.*/**"
+            ]
+          }
+        }
+      }
+    },
+    "storybook-blog-posttest": {
+      "root": "libs/blog/posttest/.cypress",
+      "sourceRoot": "libs/blog/posttest/.cypress/src",
+      "projectType": "application",
+      "architect": {
+        "lint": {
+          "builder": "@nrwl/linter:lint",
+          "options": {
+            "linter": "eslint",
+            "tsConfig": [
+              "libs/blog/posttest/.cypress/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/posttest/.*/**"
+            ]
+          }
+        },
+        "storybook-e2e": {
+          "builder": "@nrwl/cypress:cypress",
+          "options": {
+            "cypressConfig": "libs/blog/posttest/.cypress/cypress.json",
+            "tsConfig": "libs/blog/posttest/.cypress/tsconfig.e2e.json",
+            "devServerTarget": "storybook-blog-posttest:storybook"
+          },
+          "configurations": {
+            "ci": {
+              "devServerTarget": "storybook-blog-posttest:storybook:ci"
+            }
+          }
+        },
+        "storybook": {
+          "builder": "@nrwl/storybook:storybook",
+          "options": {
+            "uiFramework": "@storybook/angular",
+            "port": 4400,
+            "config": {
+              "configFolder": "libs/blog/posttest/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        },
+        "build-storybook": {
+          "builder": "@nrwl/storybook:build",
+          "options": {
+            "outputPath": "dist/storybook/storybook-blog-posttest",
+            "config": {
+              "configFolder": "libs/blog/posttest/.storybook"
+            }
+          },
+          "configurations": {
+            "ci": {
+              "quiet": true
+            }
+          }
+        }
+      }
+    },
+    "blog-posttestmoved-ui": {
+      "projectType": "library",
+      "root": "libs/blog/posttestmoved/ui",
+      "sourceRoot": "libs/blog/posttestmoved/ui/src",
+      "prefix": "test",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/blog/posttestmoved/ui/tsconfig.lib.json",
+              "libs/blog/posttestmoved/ui/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/blog/posttestmoved/ui/**/*"
+            ]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/blog/posttestmoved/ui/jest.config.js",
+            "tsConfig": "libs/blog/posttestmoved/ui/tsconfig.spec.json",
+            "passWithNoTests": true,
+            "setupFile": "libs/blog/posttestmoved/ui/src/test-setup.ts"
           }
         }
       },

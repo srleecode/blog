@@ -56,6 +56,9 @@
       ],
       "@srlee-blog/header/testing": [
         "libs/blog/header/src/testing.ts"
+      ],
+      "@srlee/blog/posttestmoved/ui": [
+        "libs/blog/posttestmoved/ui/src/index.ts"
       ]
     }
   },
