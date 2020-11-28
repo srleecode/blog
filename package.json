@@ -45,7 +45,7 @@
     "@scullyio/init": "^1.0.0-beta.3",
     "@scullyio/ng-lib": "^1.0.0-beta.2",
     "@scullyio/scully": "^1.0.0-beta.2",
-    "@srlee/domain": "file:../srlee/dist/packages/domain",
+    "@srleecode/domain": "3.0.13",
     "date-fns": "^2.15.0",
     "prismjs": "^1.21.0",
     "rxjs": "~6.5.5",
