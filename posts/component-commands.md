@@ -16,7 +16,7 @@ Component commands are custom commands that expose functions and getters for a c
 declare global {
   namespace Cypress {
     interface Chainable<Subject> {
-      sharedTable(): Chainable<<SharedTable>
+      sharedTable(): Chainable<SharedTable>
     }
   }
 }
@@ -25,7 +25,7 @@ class Column {
     constructor(public element: JQuery) {}
 
     get title(): string {
-        return this.element.text.trim();
+        return this.element.text().trim();
     }
 }
 
@@ -33,7 +33,7 @@ export class SharedTable {
     constructor(public element: JQuery) {}
 
     getColumn(index: number): Column {
-        const element = this.element.find('th').eq(ubdex);
+        const element = this.element.find('th').eq(index);
         return new Column(element);
     }
 }
@@ -51,7 +51,7 @@ export class ComponentClass {
 
 export const isComponentClass = (arg: ComponentClass): arg is ComponentClass => (arg as ComponentClass).element !== undefined;
 
-export const create = <T extemds ComponentClass>(
+export const create = <T extends ComponentClass>(
     subject: HTMLElement | JQuery,
     classToCreate: new (element: JQuery) => T
 ): T => {
@@ -84,9 +84,29 @@ export const find = (
     selector: SelectorOptions = {},
     defaultQuery: string
 ): Cypress.Chainable<JQuery> => {
-     const query = getQuery(selector, defaultQuery);
+    const query = getQuery(selector, defaultQuery);
     const baseItem = cy.wrap(component.element).find(query);
     return getSelectedItem(baseItem, selector);
+}
+
+const getQuery =  (selector: SelectorOptions, defaultQuery: string): string => {
+    const { dataCy, css } = selector;
+    if (dataCy) {
+        return `${defaultQuery}[data-cy=${dataCy}]`;
+    } else if (css) {
+        return `${defaultQuery}${css}`;
+    }
+    return defaultQuery;
+};
+
+const getSelectedItem = (baseItem: Cypress.Chainable<JQuery>, selector: SelectorOptions) => {
+     const { index, text } = selector;
+     if (index !== undefined) {
+         return baseItem.eq(index);
+     } else if (text !== undefined) {
+         return baseItem.contains(text);
+     }
+     return baseItem;
 }
 ```
 
@@ -101,10 +121,10 @@ declare global {
     interface Chainable<Subject> {
       prop<S extends keyof Subject, P extends Props<Subject>, K extends keyof P>(
           property: K
-      ): Chainable<<Subject[S]>;
-      map<F extends Method<Subject>, K extends keyof F>(method: K, ...arrgs: any[]): Chainable<any>;
+      ): Chainable<Subject[S]>;
+      map<F extends Methods<Subject>, K extends keyof F>(method: K, ...arrgs: any[]): Chainable<any>;
       elementMap<T extends Chainable<JQuery>>(method: T, ...arrgs: any[]): Chainable<any>;
-      tap<F extends Method<Subject>, K extends keyof F>(method: K, ...arrgs: any[]): Chainable<Subject>;
+      tap<F extends Methods<Subject>, K extends keyof F>(method: K, ...arrgs: any[]): Chainable<Subject>;
       elementTap<T extends Chainable<JQuery>>(method: T, ...arrgs: any[]): Chainable<Subject>;
       create<T extends ComponentClass>(classToCreate: new (element: JQuery) => T): Chainable<T>;
     }
@@ -171,7 +191,7 @@ Cypress.Commands.add('elementTap', { prevSubject: true}, (subject, method, ...ar
 
 Cypress.Commands.add('create', { prevSubject: true}, (subject, classToCreate, ...args) => {
     if (isComponentClass(subject)) {
-        return cy.wrrap(subject.element).then(e => create(e, classToCreate));
+        return cy.wrap(subject.element).then(e => create(e, classToCreate));
     }
     return cy.wrap(create(subject, classToCreate));
 });

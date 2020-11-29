@@ -1,6 +1,6 @@
 ---
 title: Domain schematics
-description: Explanations of schematics created to allow operating at the domain level
+description: Explanation of the schematics created to allow operating at the domain level
 tags: Nrwl nx
 publishedDate: 29/11/2020
 published: true
@@ -51,7 +51,7 @@ The scope tag for a domain contains all of the grouping folders. For example if 
 
 ### What if something needs to be reused in multiple libraries?
 
-As applications get more complicated it becomes apparent that there are relationships between the domains. While the libraries inside a domain can be imported by any other domain libraries, there are specific domains that are meant to get imported into many more different domains than normal domains. These domains are not meant to expose meaningful functionality in and of themselves, but are meant to provide common or core functionality that is used by other domains. There are three types of shared domains based on the level at which they apply. These levels are:
+As applications get more complicated it becomes apparent that there are relationships between the domains. While the libraries inside a domain can be imported by any other domain libraries, there are specific domains that are meant to get imported into many more different domains than normal domains. These domains are not meant to expose meaningful functionality in and of themselves, but are meant to provide common or core functionality that is used by other domains. These domains are referred to as shared domains. There are three types of shared domains based on the level at which they apply. These levels are:
   - shared - this is for content that can be used across any application. An example would be the domain "shared/table" which is for the libraries related to a table component that can be used in any application.
   - application/shared - this is for content that belongs to a single application and cannot easily be given a domain or for which a domain would be too small, e.g. one or two files, and would therefore cause overhead if it was split out. As with all libraries, care should be taken that their content is split out appropriately into the right domains. Extra care should be taken with these shared domains as it is likely that are used by many different domains which means a large number of libraries will be affected when they are updated.
   - application/domain/shared - a domain with a shared domain in it is called a parent domain and it can contain other domains. These type of shared folders setup a parent and child relationships between domains. Parent and child domains exist when there is a group of domains that all share particular functionality that is not used anywhere else in the application. For example, a cash account in a bank application might have domains for transaction history, account details, etc. these domains could all have the same header components or utility files. The common code would belong in a shared domain and the full set of domains would look something like this:
