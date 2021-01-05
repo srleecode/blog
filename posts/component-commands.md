@@ -15,7 +15,7 @@ Component commands are custom commands that expose functions and getters for a s
  - they make tests more robust and less likely to break by reducing the number of times a selector gets defined. With component commands, changing a selector requires only one place to be updated.
 
 
-The below is an example of a component command being used for a shared/table component.
+The below is an example of a component command being used for a shared/table component. An
 
 ```ts
 cy.sharedTable() // component command for the shared table component
@@ -64,7 +64,7 @@ It is often the case that you want to select not just a component, but a particu
  - css: selecting a table component with a particular css class or id
  - text: selecting a button component with particular text in it.
 
-Using the `get` and `find` functions shown below by passing a `SelectorOptions` object allows this kind of fine grained selection.
+Using the get and find functions shown below by passing a SelectorOptions object allows this kind of fine grained selection.
 
 ```ts
 interface SelectorOptions {
@@ -111,7 +111,7 @@ const getSelectedItem = (baseItem: Cypress.Chainable<JQuery>, selector: Selector
 }
 ```
 
-An important point to note is that Component commands should use cypress commands.
+An important point to note is that component commands should use cypress commands.
 
 The component command element is at the component tag level as this is where you add data-cy attributes and it is from this level that you can select all the required sub elements that are required in the methods or properties of the component command. Operations, however, should happen on the basic HTML elements. This is because Cypress has internal waiting mechanisms. These mechanisms don't work if the operations occur at higher levels and will get skipped if you use jquery to perform the operations. In general, this means that all operations need to first select a sub element to do the operation on and then use cypress commands to perform the operation. 
 
@@ -123,23 +123,30 @@ One area that you won't be able to use component commands is when you want to ch
 
 The below are useful custom commands that allow component commands to be used and chained in a readable way.
 
+Don't put everything in the custom command. Just repeated functionality for the component. If it is only needed in one file it can just be a function.
+https://docs.cypress.io/api/cypress-api/custom-commands.html#Best-Practices
+
 ```ts
 type MethodKeys<T> = ({ [P in keyof T]: T[P] extends Function ? P : never })[keyof T];
 type Methods<T> = Pick<T, MethodKeys<T>>;
 type PropKeys<T> = ({ [P in keyof T]: T[P] extends Function ? never : P })[keyof T];
 type Props<T> = Pick<T, PropKeys<T>>;
+type ResultType<T extends Function> = T extends (...args) => infer R ? R: any;
 
 declare global {
   namespace Cypress {
     interface Chainable<Subject> {
-      prop<F extends Props<Subject>, K extends keyof F>(property: K): F[K];
-      map<F extends Methods<Subject>, K extends keyof F>(method: K, ...arrgs: any[]): Chainable<any>;
+      prop<P extends Props<Subject>, K extends keyof P>(property: K): P[K];
+      map<M extends Methods<Subject>, K extends keyof M, F extends Function & M[K]>(method: K, ...arrgs: any[]): ResultType<F>;
       tap<F extends Methods<Subject>, K extends keyof F>(method: K, ...arrgs: any[]): Chainable<Subject>;
       create<T extends ComponentClass>(classToCreate: new (element: JQuery) => T): Chainable<T>;
     }
   }
 }
-
+/**
+* Custom command to return a specified property in the component command
+* It's usage is similar to the 'its' command, but allows the usage of cypress commands in the component command getter function
+*/
 Cypress.Commands.add('prop', { prevSubject: true}, (subject, property, ...args) => {
     Cypress.log({
         displayName: 'prop',
@@ -151,6 +158,10 @@ Cypress.Commands.add('prop', { prevSubject: true}, (subject, property, ...args) 
     throw new Error(`Cannot find ${property} in subject`);
 });
 
+/**
+* Custom command to return the result of a component command function
+* It's usage is similar to the 'invoke' command, but allows the usage of cypress commands in the component command function
+*/
 Cypress.Commands.add('map', { prevSubject: true}, (subject, method, ...args) => {
     Cypress.log({
         displayName: 'map',
@@ -162,17 +173,10 @@ Cypress.Commands.add('map', { prevSubject: true}, (subject, method, ...args) => 
     throw new Error(`Cannot find ${method} in subject`);
 });
 
-Cypress.Commands.add('elementMap', { prevSubject: true}, (subject, method, ...args) => {
-    Cypress.log({
-        displayName: 'elementMap',
-        message: `${method} in subject's element`
-    });
-    if (subject.element) {
-        return cy.wrap(subject.element)[method](...args);
-    }
-    throw new Error(`Cannot find ${method} in subject's element`);
-});
-
+/**
+* Custom command to execute a component commands function and return the calling component command. 
+* This allows the chaining of actions on the same component command.
+*/
 Cypress.Commands.add('tap', { prevSubject: true}, (subject, method, ...args) => {
     Cypress.log({
         displayName: 'tap',
@@ -184,20 +188,10 @@ Cypress.Commands.add('tap', { prevSubject: true}, (subject, method, ...args) => 
     throw new Error(`Cannot find ${method} in subject`);
 });
 
-Cypress.Commands.add('elementTap', { prevSubject: true}, (subject, method, ...args) => {
-    Cypress.log({
-        displayName: 'elementTap',
-        message: `${method} in subject's element`
-    });
-    if (subject.element) {
-        return cy
-            .wrap(subject.element)
-            [method](...args)
-            .then(() => subject);
-    }
-    throw new Error(`Cannot find ${method} in subject's element`);
-});
-
+/**
+* Custom command to create a comopnent command from a given JQuery element. 
+* This command is normally just used internally in component commands to create sub elements of the component as component commands.
+*/
 Cypress.Commands.add('create', { prevSubject: true}, (subject, classToCreate, ...args) => {
     if (isComponentClass(subject)) {
         return cy.wrap(subject.element).then(e => create(e, classToCreate));
