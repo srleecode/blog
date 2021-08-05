@@ -3,7 +3,7 @@ title: Microfrontends an expensive solution
 description: Microfrontends is an expensive solution that might make sense if your organisation is facing some certain types of expensive problems which are described in this post
 tags: Software development
 publishedDate: 16/1/2021
-published: true
+published: false
 ---
 
 # Microfrontends an expensive solution

@@ -10,6 +10,11 @@ slugs:
 ---
 # Friction or the fallibility of plans
 
+Mike Tyson, who
+once proclaimed “every man has a plan to beat me, until I punch him
+in the face.”
+
+
 ## Perception, prediction and planning are all underpinned by models
 
 We tend to think of perception, or more broadly seeing the world, as descriptive in nature, but it is actually more constructive. We create the world that we see because we cannot help but see it through ourselves, through the stories we weave from the contents of sensory experience, memories, motives and emotions.

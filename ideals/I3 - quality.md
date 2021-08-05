@@ -8,6 +8,46 @@ slugs:
     - ___UNPUBLISHED___kdqqtgja_h6vNHbHx6RjQmWegT7VHRjCENta5TfBG
 
 ---
+
+“Practice doesn't make perfect.
+Practice reduces the imperfection.”
+― Toba Beta, Master of Stupidity 
+
+I believe that the greatest mathematical accomplishment is Gödel's incompletess theorem. It's the embodiment of the realization that knowledge, what humanity thrives for, is actually very limited. We don't know everything, and we can't know everything. 
+
+https://www.psychologytoday.com/au/blog/theory-knowledge/201808/the-enigma-reason-brief-review
+
+Our rationalisation of ideas we think are true or right is the basis and origination of reason not a flaw. https://www.psychologytoday.com/au/blog/theory-knowledge/201808/the-enigma-reason-brief-review “reasoning is primarily a social, rather than an individual, tool. Here the purpose of reasoning is not inquisitive, but instead justificatory – we provide reasons to other people, and we evaluate the reasons provided by other people. The niche of reasoning is in the highly social world of human cooperative groups, a niche where it is highly advantageous to be able to transfer information and trust between individuals who are not kin” https://mindhacks.com/2017/07/06/the-enigma-of-reason-review/ We produce reasons in order to justify our thoughts and actions to others and to produce arguments to convince others to think and act as we suggest. We also use reason to evaluate not so much our own thought as the reasons others produce to justify themselves or to convince us. The function of Reason seems to be to justify our intuitions, not matter how silly they are. Because of the interactionist model: Reason is a social module. Its function is epistemic vigilance—to evaluate the claims of others (and build your own arguments in anticipation of such interactions). This fits the evidence and makes evolutionary sense: we need such a module lest we become helpless recipients of the deception of others, or unable to receive their good advice.
+
+
+“It always seems impossible until it's done.” ― Nelson Mandela 
+
+Bayes rule in a nutshell is a theroem that decribes how your confidence in an idea should change overtime as you encounter new evidence.
+
+By default the brain is coherence based, we take in information, we look at our beliefs and we ask: are they coherent. If they are, then that belief feels right and we are likely to accept it. 
+
+This way of thinking leads to things like the base rate neglect fallcy which is demonstrated in the follwoing example. If you saw a student that was shy would you think that they were more likely to be studying for a maths PHD or a business bachelor degree. Most people would think about this in terms of coherence and most people would view shyness as more coherent with the concept of a maths PHD student than a business school student. Therefore, they would think the maths PHD student was more likely. This is not the right question though. While it is probably true that there are more shy people who are studying for maths PHDs let's say it is 60% of the total and 15% of the total business school students are shy. There is significantly more business school students than there are maths PHD students which means it is more likely that the shy student is a business school student. 
+
+By default, we try to try to confirm or refute a blief. That is, we look for evidence coherent with that belief. This is known as confirmation bias. Being bayesian is about looking for the best theory. It is not about asking if the evidence is coherent with a belief, but is about asking which belief is it most coherent with. 
+
+A bayesian goes a setp further. They ask would this evidence be better explained with some other theory or maybe just as well with some other theory. Does the evidence actually help prove the theory or does it just align with the theory. 
+
+A bayesian sees evidence not as something that confirms a theory, but as something that can confirm or refute with different strengths many theories. To a bayesian the current pet theory no matter how well liked is just a single candidate.
+
+A conseuqnce of thinking in terms of multiple possible theories is that you become more aware that your beliefs are grayscale, they're not black and white. What we call "impossible" is just something that no evidence has been encountered yet to show that it is possible, but this could change. If the prior is equal to 1 (absolute belief) or the prior is equal to 0 (absolute denial), no amount of evidence, no matter how convincing can ever bring about a change in belief. A rational person always leave room on either end of the scale.
+
+A second consequence is that that you become aware that you have levels of confidence in your beliefs and that those levels of confidence fluctuate as you encounter new ideas and evidence.
+
+One final consequence is that it becomes easier to discard beliefs. The outside perspective, e.g. asking what would I advise another person to do if they were in the same situation, becomes more natural. It is a very common scenario for people to believe things more stronly that the evidence dictates. This can be because you might think it would be embarassing to be wrong or you may might have alreadyy invested alot based on the belief that your theory was right. This is known as the sunk cost fallacy in which we are often commited to particular ideas, so don't consider options that would be consider if you took an outside perspective. 
+
+
+ -  what are the priors. Avoid base rate neglect
+
+
+bayesion updating - we think in terms of coherence. Bayesian thinking is different
+    - what are the priors. Avoid base rate neglect
+    - how likely would it be that the opposite was true
+
 Quality models have less friction, but are more costly to create. For explicit models, these costs are in terms of deliberation and the exploration done in order to find wide range of objective sources of information that provide multiple perspectives on the subject. They also require cognitive costs in order to control yourself to ensure you act rationally and rely on objective rather than subjective influences, e.g. emotions. For implicit models, these costs are in terms of time and effort to repeatedly try to do a task successfully. In both cases the models created start with less friction and accrue less friction over time than other less quality models would.
 
 <img class="nx-jangular-blog-centered-image" src="/assets/velocity-and-code-quality.png">

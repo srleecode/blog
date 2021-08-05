@@ -12,7 +12,7 @@ published: true
 
 As a pull request (PR) reviewer, it’s your responsibility to make sure that the code is correct and of high quality before it gets merged. You are expected to do that by looking at a diff and list of files changed. You have to understand what the pull request is trying to achieve and what approach is being taken. You then need to use this understanding to potentially suggest improvements. There is a whole lot of things a reviewer needs to consider, especially in a large pull request.
 
-Making it easier for others to review your code, not only makes reviewing the code less difficult for the reviewer it also allows them to develop a better understanding of the code. This leads to quicker and higher quality reviews as well as better knowledge sharing.
+Making it easier for others to review your code, not only makes reviewing the code less difficult for the reviewer it also allows them to develop a better understanding of the code. Good PRs lead to quicker and higher quality reviews as well as better knowledge sharing.
 
 ## Characteristic of good pull requests
 

@@ -8,12 +8,27 @@ slugs:
     - ___UNPUBLISHED___kdqqtgjh_KtVtWuTrBXyXNGKvhljHYThHugWEXU2J
 
 ---
+
+“There are none so blind as those who will not see.”
+It's useless explaining to those who do not want to understand.
+
+"You	all	know	the	saying	‘seeing	is	believing’	I	
+would	argue	that	other	times	things	need	to	be	
+believed	in	to	be	seen.	Our	narrative	changes	
+our	behavior	which	changes	reality"		
+-	Andrew Lo
+
+Those who excel are often overcompensating. Running from something, hiding from something. A lack, an unmet need leads to great motivation.
+
 What separates successful from non successful people is often focus. Focus is something that we all recognize, but is innately difficult due to the spreading activation nature of the brain. Focus has become more complicated and difficult over time. It has gotten more difficult due to their being more enticing distractions around today and a greater tendency to work in larger and larger teams. This makes focus more difficult as it only not one person that needs to be focused, but multiple.
 
 Focus is important because Resources are also limited, therefore, it is important at the individual and team level that we focus on the areas where we can most deliver value.
 
 We do this through using automation and delegation are used extensively and appropriately.
 the domains that we now operate are too complicated and complex for us to be able to excel in all of them.
+
+Alot of successful people have a todo list.
+A lot of very successful people have a not to do list. They know their weaknesses and things that lead to waste
 
 _Flow state_
 
@@ -137,7 +152,7 @@ Increase the size of a task's reward (including both the pleasantness�
 
 https://www.lesswrong.com/posts/P3zrurj5hHKFKDL3M/productivity-working-towards-a-summary-of-what-we-know
 
-2 In business academia, success spirals are known as "efficacy-performance spirals" or "efficacy-performance deviation amplifying loops." See: Lindsley, Brass, & Thomas (1995). Efficacy-performance spirals: A multilevel perspective. Academy of Management Review, 20(3): 645-678.
+
 
 My own behavior baffles me. I find myself doing what I hate, and not doing what I really want to do!
 
@@ -153,6 +168,8 @@ The comparison between the present and the ideal is the inducer of i
 
 Ideals require goals  benefits of having an ideal without the crushing blow of the judge that makes you feel insufficient, as well as the power behind incremental self-improvement.
 
+We bring assumptions and knowledge to perception which is why it is such a hard thing to create in machines. Even in simple things there is a hidden complexity covered up by assumptions and knowledge we have already gained.
+https://www.youtube.com/watch?v=36GT2zI8lVA
 ---
 
 > Neither plenitude nor vacancy. Only a flicker
@@ -219,3 +236,27 @@ Flow: The Psychology of Optimal Experience. HarperCollins
 Good Business. Leadership, Flow, and the Making of Meaning. Viking
 Creativity. Flow and the Psychology of Discovery and Invention. HarperCollins
 The Evolving Self. A Psychology for the Third Millenium. HarperCollins
+
+
+
+Focus on the Process, Not the Event
+The second thing you can do to maintain long-term focus is to concentrate on processes, not events. All too often, we see success as an event that can be achieved and completed.
+
+Here are some common examples:
+
+Many people see health as an event: “If I just lose 20 pounds, then I’ll be in shape.”
+Many people see entrepreneurship as an event: “If we could get our business featured in the New York Times, then we’d be set.”
+Many people see art as an event: “If I could just get my work featured in a bigger gallery, then I’d have the credibility I need.”
+Those are just a few of the many ways that we categorize success as a single event. But if you look at the people who stay focused on their goals, you start to realize that it’s not the events or the results that make them different. It’s the commitment to the process. They fall in love with the daily practice, not the individual event.
+
+What’s funny, of course, is that this focus on the process is what will allow you to enjoy the results anyway.
+
+If you want to be a great writer, then having a best-selling book is wonderful. But the only way to reach that result is to fall in love with the process of writing.
+If you want the world to know about your business, then it would be great to be featured in Forbes magazine. But the only way to reach that result is to fall in love with the process of marketing.
+If you want to be in the best shape of your life, then losing 20 pounds might be necessary. But the only way to reach that result is to fall in love with the process of eating healthy and exercising consistently.
+If you want to become significantly better at anything, you have to fall in love with the process of doing it. You have to fall in love with building the identity of someone who does the work, rather than merely dreaming about the results that you want.
+Focusing on outcomes and goals is our natural tendency, but focusing on processes leads to more results over the long-run.
+
+
+Framing matters. You need the right perspective on a problem if you will have any chance of solving it
+https://www.theguardian.com/science/head-quarters/2017/jul/20/the-power-of-framing-its-not-what-you-say-its-how-you-say-it

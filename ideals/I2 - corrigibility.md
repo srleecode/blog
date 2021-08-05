@@ -8,15 +8,17 @@ slugs:
     - ___UNPUBLISHED___kdqqtgip_v9QtCUjEaTYgwttjfZnOJKC6AbONHeMI
 
 ---
+
+
 # Corrigibility
-
-Organizations with predictable environments can exploit that predictability with fixed structures. These fixed structures allow efficiency. With predictable situations you can find and close off unvaluable paths of inquiry quickly. You cannot do this in complex situations as they are not predictable. In complex situations, you must rely on experimentation and adaptation. This means you must explore paths of inquiry to discover their worth. This exploration may end up being wasteful as the explored path can turn out to be unvaluable. This "waste" is an unavoidable part of operating in complex situations and is what causes complex situations to have asymmetric payoffs.
-
-As organisations become more complex, the frequency of wrong decisions increases. Teams today, therefore, need to maximize their ability to be able to change and to be able to reverse decisions if they are proven to be wrong. This ability is referred to as "corrigibility".
 
 > When change is easy, the need for it cannot be foreseen; when the need for change is apparent, change has become expensive, difficult and time consuming. - David Collingridge, The Control of Technology (NY, St. Martin’s Press, 1980)
 
 > A decision is easy to correct, or highly corrigible, when, if it is mistaken, the mistake can be discovered quickly and cheaply and when the mistake imposes only small costs which can be eliminated quickly and at little expense. - David Collingridge, The Control of Technology (NY, St. Martin’s Press, 1980)
+
+Organizations with predictable environments can exploit that predictability with fixed structures. These fixed structures allow efficiency. With predictable situations you can find and close off unvaluable paths of inquiry quickly. You cannot do this in complex situations as they are not predictable. In complex situations, you must rely on experimentation and adaptation. This means you must explore paths of inquiry to discover their worth. This exploration may end up being wasteful as the explored path can turn out to be unvaluable. This "waste" is an unavoidable part of operating in complex situations and is what causes complex situations to have asymmetric payoffs.
+
+As organisations become more complex, the frequency of wrong decisions increases. Teams today, therefore, need to maximize their ability to be able to change and to be able to reverse decisions if they are proven to be wrong. This ability is referred to as "corrigibility".
 
 Corrigibility is a term that means capable of being corrected, reformed or improved. Corrigibility is a response to uncertainty and unpredictability, especially when the costs to undo a decision will be high. If the effects of a decision cannot be predicted, then the optimal approach is to maximize the ability to reverse that decision if it gets proven to be wrong. It is often the case that the risks or opportunities present in a situation increase over time. Therefore, some action is demanded. This action must be taken even though all the tools and evidence might not yet be available to correctly decide which action to take. Corrigibility is intended to deal with this situation. The problem of having to make make decisions in an environment of ignorance, and in essence boils down to: "take small steps and have an exit strategy". the greater the uncertainty the more resources you should apply to incremental exploration of that space and the more prepared you should be to reverse out of a specific design path. Make the best decision you can with the tools and evidence available to you, but be ready to pivot.
 

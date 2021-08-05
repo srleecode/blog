@@ -8,6 +8,13 @@ slugs:
     - ___UNPUBLISHED___kdqqtgjn_lTRiPdXHwXfUcYmeWcbhHe2ca0ozfWOF
 
 ---
+
+“A problem shared is a problem halved.”
+Discuss your problems with someone and then the two of you are more likely to come up with a solution.
+
+"When the game is over, the king and the pawn go back into the same box
+fear is a short pain. Regret lasts a lot longer
+
 You cannot change the past, but you can change how you percieve it, what you draw out of it.
 ## Meaning
 
@@ -63,3 +70,90 @@ Intelligence is a large aspect of agency which is why a super intelligent AI is 
 Responsibilities and duties are the most significant reducers of agency. Therefore, it is important to choose them well. Responsibilities, duties and passions are the keystones of vitality. They imbue life with meaning. They put in front of you things worth pursuing.
 
 Discipline, exploration and safe failures are the antecedents of increased agency because they lead to master or less friction.
+
+With meaning you end pursuing your own path and that is where the most gains are as that is where there is the least competition. There is only one you.
+https://youtu.be/piSagRx7Y9k
+
+
+
+'The cave you fear to enter holds the treasure you seek.' - Joseph Campbell
+
+learned helplessness. We often give up our own agency beliving thatthere are things we cannot change or need others to reach. 
+https://www.youtube.com/watch?v=YMPzDiraNnA
+
+  > No man is an island entire of itself,
+Every man is a piece of the continent,
+A part of the main - John Donne
+
+> We all share one planet and are one﻿ humanity; there is no escaping this reality. -Wangari Maathai
+
+ >Happiness - only real when shared - Christopher McCandless
+
+Synergy has lead to humans becoming interdependent
+Humanities evolutionary path has not been one of becoming faster or stronger, but of instead becoming better able to utilise synergy. Humans have come to dominate this planet, not through being faster or stronger, but through being more intelligent and capable of social interconnection.  The ability to coordinate needs, thoughts and feelings greatly expanded humanities survival options.
+
+It is not that humans became stronger
+
+Humanity has evolved in an environment where not being part of a tribe has meant almost certain death. Therefore, we have become wired for social connection. To be human is to need others both physically as well as emotionally and psychologically.
+
+
+
+To be human is to need others.
+
+
+This means that being human means to need others.
+Limitation, specialisation, intelligence and variance all lead to interdependence because they present synergistic opportunities. That is, opportunities in which we can work with others to achieve more than we ever could alone. 
+
+Interdependence can be something hard to accept and relationships can be hard to maintain. Therefore, synergy while beneficial is something that is rarely realised. This makes synergy an ideal, something we are directed towards yet rarely reaching.
+
+
+have no claws, and in doing so we also became fundamentally interdependent. Being part of a tribe is integral to our survival. This is not only true physically it is also true emotionally and psychologically. To be human is to need others, for example, without touch and personal affection a significant portion of babies will die. 
+
+We not only need others we are better with others. 
+
+Attachment
+
+Attachment theory, developed by Bowlby (1969, 1973), conceptualizes the biological tendency of infants to establish an afectional bond with their primary caretakers within the frst year of life. The resultant attachment system forms the basis of people’s internal working models of close relationships that persist from early childhood throughout adulthood, with some
+degree of malleability. Bowlby indicated that when the person perceives the attachment fgure as available and responsive to proximity-seeking behavior, she experiences a sense of attachment security, perceiving the attachment fgure as trustworthy and reliable. These nurturing and attuned relational experiences foster positive internal representations of self and others that
+enhance self-confdence and trust in the attachment figures readiness to ofer support. Bowlby (1988) believed that attachment security (i.e., secure attachment) not only engenders a positive self-image and facilitates the development of mutually satisfying relationships but also allows the individual to explore
+and pursue non-attachment activities, such as sex.
+Bowlby (1969, 1973) posited that due to biological pres-
+sures, children form attachments to their caregivers even if the caregiver is inconsistent, unresponsive, rejecting, neglectful, or abusive. Individuals who experience such disruptions in their attachment system tend to develop negative internal working models of self or others and adopt one of two defensive strategies of insecure attachment: hyperactivation or deactivation of the attachment system. Preoccupied with threats of
+abandonment, separation and betrayal, and apprehension that the attachment fgure will be unavailable to meet their needs, anxiously attached individuals tend to engage in hyperactivating attachment behaviors, which Bowlby called “protest”—
+frenzied, unrelenting attempts to elicit caretaking behaviors in the attachment figure, including clinging, controlling, and forceful behaviors. A hyperactivated individual remains hypervigilant to any threats of abandonment, separation, and betrayal, which inadvertently and inevitably generates rela-
+tional confict thereby reinforcing feelings of insecurity. In a stance that Bowlby termed “compulsive self-reliance” (Bowlby, 1969), avoidantly attached individuals engage in deactivating behaviors characterized by the inhibition of proximity-seeking
+behaviors and maintenance of physical and emotional distance. Avoidantly attached individuals disregard threats to the relationship and avoid intimacy and interdependence when coping with attachment needs.
+
+Attachment measures a person’s ability to connect to other human beings.
+
+Healthy attachment means a person connects to others with an expectation of emotional security. The person with healthy attachment does not worry they will be abandoned or forgotten because they know others will think of them even while they are apart and will make decisions with their wellbeing in mind. They do not worry when disagreements arise because they know they are connected at a deeper level. Mistakes aren’t feared because the attached person knows they’ll be given a chance to explain their mistake and make things right. Vulnerability is relatively easy because a person with healthy attachment believes others have their best interests at heart.
+
+In short, a person with healthy attachment believes love is freely given instead of earned, that others love them for who they are, that people will continue to love them even in their absence, and that love cannot be casually destroyed.
+
+Unhealthy attachment means a person struggles to believe in any emotional security, so vulnerability to others becomes dangerous and fearful. In fact, vulnerability is utterly terrifying because it could lead to judgment and abandonment as secret imperfections are revealed. Vulnerability may even lead to outright victimization by those around them. The detached person struggles constantly with worries of abandonment and being forgotten because they don’t believe others really love them for who they are, only for the services they perform. They believe decisions others make will usually conflict with their own needs because the people they love don’t think about them enough to remember their wellbeing, or else they just aren’t important enough to consider. Disagreements and mistakes are often the end of relationships to them because they believe they’ll be abandoned and rejected instantly upon displaying imperfection and will be given no chance to explain or make amends.
+
+In short, a person with unhealthy attachment believes others only love them for the services they perform, that love must be continuously earned, that people will actively fall out of love with them every moment they are not refilling the person’s pleasure meter, and that love can be accidentally destroyed by the slightest mistake.
+
+
+Attachment styles form as a result of the young mind trying to understand one thing: Will I be loved for who I am, or do I have to earn love?
+
+This complicated question is boiled down to a simple black-or-white equation because the young mind is not capable of nuance. At 3 months old, an infant only knows its mother is not responding to its cries. At 3 years old, a toddler doesn’t understand that daddy is hitting him because daddy has alcohol problems. At 10 years old, a little girl doesn’t understand that she’s been abandoned because her parents have mental health issues.
+
+To the little mind, everything that happens is about them. Everything that happens is a direct result of the child’s behavior and quality. Therefore, abuse and neglect and abandonment make the child believe:
+
+“I deserve this.”
+
+“No one will ever treat me better than my parents, and even they couldn’t love me.”
+
+“I will not be loved because I don’t deserve to be loved. But maybe I can earn love if I’m good enough.”
+"I don't want to not live because of my fear of what could happen..." ~Laird Hamilton
+
+“There is something inside me that others can see, something horrible that makes it so others can’t love me. I don’t know what the bad thing is, so I don’t know what I can’t show people. I need to lock down and keep everything inside so people won’t see this horrible thing and abandon me.”
+
+Any serious disruption in early life can create an attachment wound.
+
+Divorce, where the family is ripped apart and the child is told “sometimes love just doesn’t last”
+Abuse, where the child learns they can be hurt by anyone at any time and no one will protect them
+Daycare in significant amounts and especially early in infancy, where the child is separated from their parents and must compete with others for attention and love, and where the workers change based on shifts or employment disruptions so the formed attachments disappear
+Parental neglect or emotional distance, where the child doesn’t understand why their parents seem to want nothing to do with them and don’t invest time or emotional energy in the child
+All these occurrences can send the message to a child’s brain that they are the cause for their own loneliness and that they are not worthy of being loved. As irrational as it may seem, the child’s brain truly believes the parents would not get divorced and split the household if they could have loved the child enough, or that abuse would not have happened if the child was better behaved.

@@ -8,11 +8,38 @@ slugs:
     - ___UNPUBLISHED___kdqqtgij_3ZwllK5qRzz87DpLLBwP7HzDOqqR9UZG
 
 ---
+
+
 # Synergy
 
-Synergy¹ is when the combined power of a group of things when they are working together is greater than the total power achieved by working separately. A negative synergy² is a destructive interaction between two or more elements where the parts work in a counteractive manner to dampen down or destroy the effects of each other. Negative synergies are often the result of components failing to coordinate or differentiate effectively.
+ > Synergy - the bonus that is achieved when things work together harmoniously. - Mark Twain
 
-Synergy is hard to achieve because it is common for people to work at cross purposes especially when their levels of interaction are low. It is common because ideals and a large number of ideas are very hard to make explicit and to reach agreement on. Another complicating factor is that incentive structures in our social environments are often setup in such a way that they cause competition rather than synergy.
+ > A single arrow is easily broken, but not ten in a bundle
+
+Synergy¹ is when the combined power of a group of things when they are working together is greater than the total power achieved by working separately. A negative synergy² is a destructive interaction between two or more elements where the parts work in a counteractive manner to dampen down or destroy the effects of each other. 
+
+Synergies are derived from systems interacting or systems aligning or a combination of both. 
+
+We might view technologies as human-machine symbiosis extensions of humans (e.g. eye glasses), as tools (e.g. calculators), or as partners (e.g. autonomous robots) or as a new indivisible entity. . Each metaphor suggests a different level of autonomy on the part of the machine.
+
+We might want human extensions to have minimal autonomy, tools somewhere in between, and partners to be relatively self-motivated (but with shared goals).
+
+How the parts interact
+  - give or take - complementarity, symbiosis, partnership, Self-Organization, emergence, synthesis
+  - directed/order - synchronisation, stigmergy,  
+  - 
+
+Negative synergy
+r. Burney relays a conversation he had with a pilot that described to him why airplanes fall out of the sky:
+
+“With the exception of terrorist bombing, very few jetliners ever go down for a single reason. These big planes fail mechanically all the time, and passengers don’t even know it. Crashes occur when, simultaneously, more than one thing goes wrong. For instance, a mechanical failure occurs during a storm, or a system fails and then the backup fails, too. Or a mechanical failure is made worse by a pilot error, or vice versa. Ultimately, planes hit the ground simply because they fall out of the air, and it usually takes a combination of problems to bring one that low.” (page 84-85)
+tipping point
+themechanical   resilience,   robustness   and   carryingcapacity   of   a   physical   structure   depends   verymuch   on   the   way   its   parts   interact.   This   wasalready known in biology (see example 3.1) but notat his time applied in engineering and architecture.For example, the structures he designed, such asthat in the Figure are much stronger than otherstructures  using  the  same   sub-components  but34
+arranged on other ways. This led him to design thegeodesic   dome   which   made   him   famousworldwide. The structures supporting the domeswere much lighter, robust, beautiful and cheaperthan the classical alternatives. Now we know thatnature had invented this structure thousands ofmillions of years before and created “Fullerenes” orcarbon structures using this design.35
+
+
+
+
 
 Some common ways in which synergy is achieved is through:
 
@@ -20,9 +47,9 @@ Some common ways in which synergy is achieved is through:
   - synchronizing³ a meeting across time so that it is repeated every week at the same time and place.
   - Synchronizing⁴ groups or individuals so that they act in unison to achieve a single objective.
 - Complementarity⁵ or co-operating so as to harness complementary skills. This refers to situations where two things reciprocally complete or fulfill a lack in the other. A common example is the division of labor and specialization which lead to opportunities for complementarity and synergistic interactions through the simultaneous execution of tasks that then can be synchronized.
-- Solutions that solve a given problem and at the same time stimulate and contribute to the resolution of other problems⁶. For example, instead of doing a task for someone it might be wiser to supervise or teach them how to do the task themselves. This might be a bit slower, but it satisfies two goals at once: it gets the task done and it enables the person to be able to do it for themselves in the future. As the saying goes: give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime
-- Empowering⁷ people so that they can organically self-organise and form synergistic relationships.
-
+- Solutions that solve a given problem and at the same time stimulate and contribute to the resolution of other problems⁶. For example, instead of doing a task for someone it might be wiser to supervise or teach them how to do the task themselves. This might be a bit slower, but it satisfies two goals at once: it gets the task done and it enables the person to be able to do it for themselves in the future.
+- self-organization - Empowering⁷ people so that they can organically self-organise and form synergistic relationships.
+of stigmergy, a mechanism for the coordination of actions via the trace they leave in a medium, can explain self-organizing activities in a broad range of domains, including social insects, collaborative websites, and human institutions. 
 ---
 
 ¹
@@ -155,7 +182,7 @@ In the military, synchronization is recognized as an important concept because i
 In terms of software development, synchronization can have economic advantages. For example,
 
 - Processing multiple teams at the same time can allows cost advantages through scale economies in processing or through situations where there is higher value in processing multiple items simultaneously, e.g. project reviews or demos.
-- Sharing standards, processes and practices can allow the capacity of a team to be more fluid. As teams become able to transfer resources between themselves when one team has a high work load and the other does not.
+- Sharing standards, processes and practices can allow the capacity of a team to be more fluid. As teams become able to transfer resources between themselves when one team has a high work load and another does not.
 
 ⁵
 
@@ -187,6 +214,6 @@ Unnecessarily forcing decisions to be made at the top is also a major wellspring
 
 Synergy issues are to a certain extent unavoidable and as organizations grow larger these problems tend to increase and become harder to resolve. Unfortunately, as with most complex problems top-down efforts to resolve them often fail or end up causing large amounts of wasted time and money without much value. This reason for this is because:
 
-- Cooperation and sharing are often set up as ideals that are beyond debate. The goals of synergy programs tend to be expressed in broad, vague terms, e.g. “sharing best practices” or “cross-fertilizing ideas”, and the costs or benefits of such ventures are, therefore, hard to understand and criticize —who, after all, wants to argue against sharing? Fuzzy language obscures and shuts down discussion about the real costs and benefits of the programs. It also tends to undermine implementation as it leads to scattershot, unfocused efforts as different parties impose their own views about what needs to be done to reach the imprecisely stated goals.
+- Cooperation and sharing are often set up as ideals that are beyond debate. The goals of synergy programs tend to be expressed in broad, vague terms, e.g. “sharing best practices” or “cross-fertilizing ideas”, and the costs or benefits of such ventures are, therefore, hard to understand and criticize — who, after all, wants to argue against sharing? Fuzzy language obscures and shuts down discussion about the real costs and benefits of the programs. It also tends to undermine implementation as it leads to scattershot, unfocused efforts as different parties impose their own views about what needs to be done to reach the imprecisely stated goals.
 - These efforts are often about aligning multiple groups to a common, already perceived, ideal. To be effective they need to be more about integrating different perspectives, understanding when they are useful and when an alternative is better. Only once this is done and the teams agree can you create a new perspective that encompasses the benefits of them all. That is, only when the new way of doing things is perceived as better rather than just a different way of doing things will it be embraced and implemented.
-- Synergistic relationships are not formed in a top down manner. To be formed they need exploration and interaction which means that people at the bottom need to be empowered enough to explore and explore with others. Complex domains have asymmetric payoffs as it is difficult to know beforehand which routes are worth pursuing or valuable. You have to explore them first to find out if they are valuable. This can be seen as wasteful and inefficient when the exploration turns out to not be fruitful. If a comapny is focused on efficiency and people pursuing potentially wasteful things is seen as detrimental or harmful, then it won't be done which will have massive impacts on innovation and synergistic relationships are unlikely to be formed
+- Synergistic relationships are not formed in a top down manner. To be formed they need exploration and interaction which means that people at the bottom need to be empowered enough to explore and to explore with others. Complex domains have asymmetric payoffs as it is difficult to know beforehand which routes are worth pursuing or valuable. You have to explore them first to find out if they are valuable. This can be seen as wasteful and inefficient when the exploration turns out to not be fruitful. If a comapny is focused on efficiency and people pursuing potentially wasteful things is seen as detrimental or harmful, then it won't be done which will have massive impacts on innovation and synergistic relationships are unlikely to be formed

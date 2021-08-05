@@ -60,6 +60,7 @@ Context exploration cost is the cost involved with having to explore the code to
 Context is a vital part of understanding what a variable means because it is what allows us to resolve ambiguity, i.e. choose the correct interpretation out of all the potential ones.
 
 One of the major reasons why it is difficult to write good variable names is that it is tricky to determine when a variable name is bad. This is because when we are writing the code the context of the code is in our brains, but if someone else was to look at the code or you did in the future than that context isn't available and has to discovered again, so it is only after the fact or through getting someone else to review your code that you can realise that you are relying on contextual information that you only have access to because you were writing the code. Self reviewing shortly after writing the code, therefore, does not allow you to understand how difficult the code is to read.
+One of the major reasons why it is difficult to write good variable names is that it is tricky to determine when a variable name is bad. This is because when we are writing the code the context of the code is in our brains, but if someone else was to look at the code or you did in the future then that context isn't available and has to discovered again, so it is only after the fact or through getting someone else to review your code that you can realise that you are relying on contextual information that you only have access to because you were writing the code. Self reviewing shortly after writing the code, therefore, does not allow you to understand how difficult the code is to read.
 
 ### Working memory cost
 
@@ -69,7 +70,7 @@ Working memory cost can be reduced by writing smaller functions that only do one
 
 ### Practical rules
 
-When it comes to variable naming, clarity is the primary concern. However, well used concision can make the code more readable. Concision, however, by necessity makes you more reliable on context in order to derive the appropriate meaning. Therefore, the higher the code exploration cost and working memory cost becomes the less beneficial concision becomes. Some corollaries from this are:
+When it comes to variable naming, clarity is the primary concern. However, well used concision can make the code more readable. Concision, however, by necessity makes you more reliant on the context in order to derive the appropriate meaning. Therefore, the higher the code exploration cost and working memory cost becomes the less beneficial concision becomes. Some corollaries from this are:
 
 - The smaller scope a variable has the less costs abbreviation and concision has
 - Commonly used and readily understood abbreviations have less cost than new abbreviations. getAscOrders is better than getBlc which is meant to be get balance. A variable name used only a few times is not familiar nor will it become familiar. However, a variable name, or a function name, that is used throughout a program might be a good candidate for abbreviation.
